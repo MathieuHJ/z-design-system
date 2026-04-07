@@ -6,8 +6,10 @@ This repo contains:
 - a static preview app for visual review
 - implementation and handoff docs
 - starter React component code for the shared library
+- a fast inventory of tokens and component maturity
 
 ## Structure
+- `INVENTORY.md`: token list, component status, and recommended next exports
 - `apps/preview`: static preview of the approved visual language
 - `docs`: handoff, registry, snippets, and token documentation
 - `packages/ui`: starter React component package

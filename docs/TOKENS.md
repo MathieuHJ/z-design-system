@@ -4,24 +4,30 @@
 These tokens describe the visual system in implementation terms for React and Tailwind-based builds.
 
 ## Color Roles
-- `--bg`: base page background
-- `--surface`: default blurred surface
-- `--surface-strong`: stronger dark surface
-- `--line`: standard border line
-- `--line-soft`: subtle divider line
-- `--line-focus`: focus ring color
-- `--text`: primary foreground
-- `--muted`: secondary text
-- `--mint`: privacy / positive accent
-- `--gold`: primary action accent
-- `--warning`: caution tone
-- `--danger`: destructive tone
+
+| Token | Purpose | Typical Usage |
+| --- | --- | --- |
+| `--bg` | base page background | app body, site canvas |
+| `--surface` | default blurred surface | cards, rails, shell panels |
+| `--surface-strong` | stronger dark surface | stronger overlays or denser panels |
+| `--line` | standard border line | cards, pills, nav, buttons |
+| `--line-soft` | subtle divider line | separators, low-contrast borders |
+| `--line-focus` | focus ring color | focus-visible states |
+| `--text` | primary foreground | headings, values, key content |
+| `--muted` | secondary foreground | helper copy, inactive states |
+| `--mint` | privacy / positive accent | proof states, healthy status, active privacy |
+| `--gold` | primary action accent | primary actions, highlighted warning labels |
+| `--warning` | caution tone | warning values, risk indicators |
+| `--danger` | destructive tone | error and high-risk states |
 
 ## Type
-- Headings use `Space Grotesk`
-- UI/body use `Instrument Sans`
-- Headings should carry the hierarchy
-- Support copy should remain quiet and readable
+
+| Rule | Purpose |
+| --- | --- |
+| Headings use `Space Grotesk` | create hierarchy and product identity |
+| UI/body use `Instrument Sans` | keep controls and support copy readable |
+| Headings carry the hierarchy | avoid oversized card chrome doing the hierarchy work |
+| Support copy stays quiet | preserve breathing room and scanability |
 
 ## Spacing
 - Prefer fewer containers with more padding

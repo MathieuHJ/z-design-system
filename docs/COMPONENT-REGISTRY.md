@@ -164,6 +164,91 @@ This file maps the current static library into implementation-oriented names.
 ### `DisconnectedState`
 - Static code name: `.disconnected-state`
 
+## Additional Recommended Components
+
+These are not fully modeled in the static preview yet, but they are needed based on the current platform surfaces.
+
+### `PageHeader`
+- Purpose: route title plus subtitle
+
+### `TopNavLink`
+- Purpose: top-level navigation item with active indicator
+
+### `WalletPill`
+- Purpose: compact connected wallet display in header
+
+### `MetricCard`
+- Purpose: dashboard metric summary card
+
+### `StatusBadge`
+- Purpose: active, disconnected, whitelisted, successful, or warning states
+
+### `KeyValueGrid`
+- Purpose: labeled system or network metadata layout
+
+### `DataCard`
+- Purpose: generic product card section wrapper
+
+### `SelectField`
+- Purpose: token or option selection field
+
+### `PresetButtonGroup`
+- Purpose: quick amount presets
+
+### `AmountField`
+- Purpose: numeric amount input with token workflow compatibility
+
+### `PrimaryActionBar`
+- Purpose: full-width route CTA
+
+### `SuccessBanner`
+- Purpose: immediate success or confirmation feedback
+
+### `ResultCard`
+- Purpose: post-transaction result summary
+
+### `SecurityPromptModal`
+- Purpose: required setup or derivation modal
+
+### `AddressPanel`
+- Purpose: long-form address display with support copy
+
+### `CopyButton`
+- Purpose: copy action for addresses, raw data, tx hashes
+
+### `Accordion`
+- Purpose: expandable section for advanced or optional content
+
+### `CodeBlock`
+- Purpose: raw structured output display
+
+### `QRCodeCard`
+- Purpose: QR receive view with related actions
+
+### `ActionPair`
+- Purpose: paired horizontal actions such as `Copy` and `Share`
+
+### `SegmentedControl`
+- Purpose: mode toggles like public/shielded
+
+### `SwapDirectionButton`
+- Purpose: reverse pair direction in a swap flow
+
+### `SwapModeSwitcher`
+- Purpose: mode control at top of trade flow
+
+### `OptionChipGroup`
+- Purpose: grouped selectable options like slippage and fee tier
+
+### `InlineHelperText`
+- Purpose: quiet support or explanatory copy within a form
+
+### `SectionDivider`
+- Purpose: low-emphasis structure inside dense surfaces
+
+### `EventEmptyState`
+- Purpose: empty state for events or activity lists
+
 ## Proposed Future React Exports
 When this moves into code, a clean export surface would look like:
 
@@ -207,6 +292,33 @@ export {
   AccountBlock,
   ActivityFeed,
   FeedRow,
-  DisconnectedState
+  DisconnectedState,
+  PageHeader,
+  TopNavLink,
+  WalletPill,
+  MetricCard,
+  StatusBadge,
+  KeyValueGrid,
+  DataCard,
+  SelectField,
+  PresetButtonGroup,
+  AmountField,
+  PrimaryActionBar,
+  SuccessBanner,
+  ResultCard,
+  SecurityPromptModal,
+  AddressPanel,
+  CopyButton,
+  Accordion,
+  CodeBlock,
+  QRCodeCard,
+  ActionPair,
+  SegmentedControl,
+  SwapDirectionButton,
+  SwapModeSwitcher,
+  OptionChipGroup,
+  InlineHelperText,
+  SectionDivider,
+  EventEmptyState
 }
 ```
