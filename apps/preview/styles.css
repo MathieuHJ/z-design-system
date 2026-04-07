@@ -51,18 +51,15 @@ body {
 .hero__mark {
   display: grid;
   place-items: center;
-  width: 72px;
-  height: 72px;
-  padding: 14px;
-  border-radius: 22px;
-  background: rgba(255, 255, 255, 0.025);
-  border: 1px solid var(--line);
+  width: 44px;
+  height: 44px;
+  padding: 0;
 }
 
 .hero__mark img {
   display: block;
-  width: 42px;
-  height: 58px;
+  width: 24px;
+  height: 34px;
   object-fit: contain;
 }
 
@@ -79,6 +76,7 @@ h2,
 h3,
 strong {
   font-family: "Space Grotesk", "Instrument Sans", sans-serif;
+  font-weight: 500;
 }
 
 h1 {
@@ -255,32 +253,31 @@ h3 {
 }
 
 .z-button--primary {
-  background: var(--gold);
+  background: var(--mint);
   color: #0a0a0a;
 }
 
 .z-button--primary.is-hover {
-  background: #f4d483;
+  background: #b9e8c2;
 }
 
 .z-button--primary.is-pressed {
-  background: #dfbf72;
+  background: #97d9a7;
   transform: translateY(1px);
 }
 
 .z-button--secondary {
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid var(--line);
-  color: var(--text);
+  background: var(--gold);
+  border: 0;
+  color: #0a0a0a;
 }
 
 .z-button--secondary.is-hover {
-  background: rgba(255, 255, 255, 0.08);
+  background: #f4d483;
 }
 
 .z-button--secondary.is-pressed {
-  background: rgba(255, 255, 255, 0.11);
-  border-color: rgba(255, 255, 255, 0.12);
+  background: #dfbf72;
   transform: translateY(1px);
 }
 
@@ -291,7 +288,7 @@ h3 {
 }
 
 .z-button--secondary:hover:not([disabled]):not(.is-hover):not(.is-pressed) {
-  background: rgba(255, 255, 255, 0.07);
+  background: #f4d483;
 }
 
 .z-button--ghost:hover:not([disabled]) {
@@ -427,6 +424,8 @@ h3 {
   border: 1px solid var(--line);
   color: rgba(245, 245, 240, 0.78);
   background: rgba(255, 255, 255, 0.02);
+  font-size: 12px;
+  line-height: 1;
 }
 
 .micro-badge::before {
@@ -659,16 +658,16 @@ h3 {
 }
 
 .shell__brand {
-  width: 36px;
-  height: 52px;
+  width: 28px;
+  height: 40px;
   display: grid;
   place-items: center;
 }
 
 .shell__brand img {
   display: block;
-  width: 28px;
-  height: 40px;
+  width: 20px;
+  height: 30px;
   object-fit: contain;
 }
 
@@ -842,6 +841,25 @@ h3 {
   box-shadow: 0 18px 54px rgba(0, 0, 0, 0.22);
 }
 
+.component-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.component-name {
+  display: inline-flex;
+  width: fit-content;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--line-soft);
+  color: rgba(245, 245, 240, 0.55);
+  background: rgba(255, 255, 255, 0.015);
+  font-size: 12px;
+  font-family: "JetBrains Mono", monospace;
+}
+
 .grid.three .glass {
   min-height: 100%;
 }
@@ -927,7 +945,7 @@ h3 {
 .position-stat-grid,
 .account-rail {
   display: grid;
-  gap: 16px;
+  gap: 18px;
 }
 
 .stepper {
@@ -1052,7 +1070,7 @@ h3 {
   grid-template-columns: 1.4fr 1fr 1fr 88px auto;
   display: grid;
   align-items: center;
-  padding: 28px 0;
+  padding: 32px 0;
   border-top: 1px solid var(--line-soft);
   column-gap: 24px;
 }
@@ -1097,12 +1115,17 @@ h3 {
 }
 
 .spark--up {
-  background-image: linear-gradient(180deg, rgba(171, 226, 182, 0.22), rgba(171, 226, 182, 0)), linear-gradient(135deg, transparent 0 16%, rgba(171, 226, 182, 0.9) 16% 18%, transparent 18% 32%, rgba(171, 226, 182, 0.9) 32% 34%, transparent 34% 48%, rgba(171, 226, 182, 0.9) 48% 50%, transparent 50% 64%, rgba(171, 226, 182, 0.9) 64% 66%, transparent 66%);
+  background-image:
+    radial-gradient(circle at 16% 82%, rgba(171, 226, 182, 0.14), transparent 34%),
+    linear-gradient(180deg, rgba(171, 226, 182, 0.1), rgba(171, 226, 182, 0)),
+    linear-gradient(140deg, transparent 0 22%, rgba(171, 226, 182, 0.92) 22% 25%, transparent 25% 44%, rgba(171, 226, 182, 0.92) 44% 47%, transparent 47% 66%, rgba(171, 226, 182, 0.92) 66% 69%, transparent 69%);
   border-radius: 8px;
 }
 
 .spark--flat {
-  background-image: linear-gradient(180deg, rgba(254, 220, 140, 0.18), rgba(254, 220, 140, 0)), linear-gradient(180deg, transparent 46%, rgba(254, 220, 140, 0.9) 46% 54%, transparent 54%);
+  background-image:
+    linear-gradient(180deg, rgba(254, 220, 140, 0.12), rgba(254, 220, 140, 0)),
+    linear-gradient(180deg, transparent 44%, rgba(254, 220, 140, 0.86) 44% 50%, transparent 50%);
   border-radius: 8px;
 }
 
@@ -1193,8 +1216,8 @@ h3 {
 }
 
 .callout {
-  padding: 42px 30px 36px;
-  gap: 22px;
+  padding: 60px 38px 54px;
+  gap: 34px;
   align-content: start;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.018), rgba(255, 255, 255, 0)),
@@ -1212,31 +1235,35 @@ h3 {
 .callout p {
   max-width: 24ch;
   font-size: 1.15rem;
-  line-height: 1.52;
+  line-height: 1.72;
   color: rgba(245, 245, 240, 0.66);
 }
 
 .proof-card,
 .health-card {
-  padding-top: 34px;
-  padding-bottom: 32px;
+  padding-top: 52px;
+  padding-bottom: 50px;
 }
 
 .proof-card p,
 .health-card p {
   max-width: 25ch;
-  line-height: 1.7;
+  line-height: 1.84;
   color: rgba(245, 245, 240, 0.68);
 }
 
 .proof-card {
+  gap: 24px;
+}
+
+.proof-card {
   background:
-    radial-gradient(circle at top right, rgba(171, 226, 182, 0.08), transparent 34%),
     linear-gradient(180deg, rgba(255, 255, 255, 0.018), rgba(255, 255, 255, 0)),
     rgba(12, 12, 12, 0.34);
 }
 
 .health-card {
+  gap: 22px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.016), rgba(255, 255, 255, 0)),
     rgba(12, 12, 12, 0.34);
@@ -1386,10 +1413,10 @@ h3 {
 
 .account-rail {
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  padding: 28px 30px;
+  padding: 34px 30px;
   border-radius: 24px;
   column-gap: 28px;
-  row-gap: 24px;
+  row-gap: 30px;
   background:
     radial-gradient(circle at top right, rgba(171, 226, 182, 0.06), transparent 28%),
     linear-gradient(180deg, rgba(255, 255, 255, 0.018), rgba(255, 255, 255, 0)),
@@ -1399,12 +1426,12 @@ h3 {
 .activity-feed,
 .disconnected-state {
   display: grid;
-  gap: 22px;
+  gap: 28px;
 }
 
 .feed-row {
   align-items: center;
-  padding-top: 22px;
+  padding-top: 28px;
   border-top: 1px solid var(--line-soft);
 }
 
@@ -1439,8 +1466,8 @@ h3 {
 }
 
 .disconnected-state {
-  padding-top: 34px;
-  padding-bottom: 34px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .tone-mint {
@@ -1523,13 +1550,13 @@ h3 {
   }
 
   .hero__mark {
-    width: 60px;
-    height: 60px;
-    padding: 10px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
   }
 
   .hero__mark img {
-    width: 36px;
-    height: 50px;
+    width: 22px;
+    height: 32px;
   }
 }
