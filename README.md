@@ -12,15 +12,6 @@ This repo contains:
 - `docs`: handoff, registry, snippets, and token documentation
 - `packages/ui`: starter React component package
 
-## Local Preview
-
-```bash
-cd /Users/mhj/Documents/MH/MHJ-Design/Vibes/Zed/z-design-system
-python3 -m http.server 4173 -d apps/preview
-```
-
-Then visit [http://localhost:4173](http://localhost:4173).
-
 ## Goals
 - give product engineers a reusable visual system
 - keep spacing, typography, and component naming stable
