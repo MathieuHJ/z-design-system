@@ -1,0 +1,14 @@
+:root {
+  --zds-bg: #090909;
+  --zds-surface: rgba(14, 14, 14, 0.52);
+  --zds-surface-strong: rgba(21, 21, 21, 0.72);
+  --zds-line: rgba(255, 255, 255, 0.08);
+  --zds-line-soft: rgba(255, 255, 255, 0.05);
+  --zds-line-focus: rgba(171, 226, 182, 0.32);
+  --zds-text: #f5f5f0;
+  --zds-muted: #8a8a85;
+  --zds-mint: #abe2b6;
+  --zds-gold: #fedc8c;
+  --zds-warning: #f5b546;
+  --zds-danger: #e76767;
+}
